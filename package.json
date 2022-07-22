@@ -4,8 +4,9 @@
   "description": "",
   "main": "hello.js",
   "scripts": {
-    "start": "node hello.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx nodemon hello.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint ./"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "dependencies": {
     "express": "^4.18.1",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
     "pug": "^3.0.2"
   },
   "devDependencies": {

@@ -64,6 +64,7 @@ app.get('/:language', (req, res, next) => {
 });
 
 // error handler
+// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, _next) => {
   console.log(err);
   res.status(404).send(err.message);
